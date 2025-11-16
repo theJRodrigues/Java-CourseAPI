@@ -25,7 +25,7 @@ public class Course {
   private String name;
   private String category;
   private String teacher;
-  private boolean active = true;
+  @Builder.Default private boolean active = true;
 
   @CreationTimestamp
   @Column(updatable = false)
